@@ -1,4 +1,4 @@
-# 🚀 Nodemation - One-Click n8n Setup on Ubuntu Server
+# Nodemation - One-Click n8n Setup on Ubuntu Server
 
 **Fully automated script to install, configure, and secure n8n on any Ubuntu server with NGINX and SSL**
 
@@ -9,37 +9,37 @@
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎯 **One-click installation** for n8n with Docker Compose
-- 🔄 **Automatic NGINX reverse proxy** setup
-- 🔐 **SSL certificate issuance** via Certbot
-- 📦 **n8n updated to latest version** automatically
-- 🛡️ **Secure configuration** out of the box
+- One-click installation for n8n with Docker Compose
+- Automatic NGINX reverse proxy setup
+- SSL certificate issuance via Certbot
+- n8n updated to latest version automatically
+- Secure configuration out of the box
 
 ---
 
-## ⚡ Quick Run
+## Quick Run
 
 ### One-Line Installation
 
 ```bash
 sudo wget https://raw.githubusercontent.com/CodeByHasan/nodemation/main/nodemation.sh -O nodemation.sh && chmod +x nodemation.sh && ./nodemation.sh
-```
+````
 
-> **⚠️ Important:** Make sure your domain points to your server's public IP before running the script!
+> **Important:** Make sure your domain points to your server's public IP before running the script.
 
 ---
 
-## 🌐 Domain Setup
+## Domain Setup
 
 Before running the script, ensure your domain points to your server's public IP address.
 
-### 1️⃣ Cloudflare Setup
+### Cloudflare Setup
 
-1. 🔐 Login to **Cloudflare** → **Dashboard** → Select your domain
-2. 🔧 Go to **DNS** → **Records**
-3. ➕ Add an **A Record**:
+1. Login to **Cloudflare** → **Dashboard** → Select your domain
+2. Go to **DNS** → **Records**
+3. Add an **A Record**:
 
 ```
 Type: A
@@ -49,11 +49,11 @@ Proxy status: DNS only (gray cloud) or Proxied (orange cloud)
 TTL: Auto
 ```
 
-### 2️⃣ Namecheap Setup
+### Namecheap Setup
 
-1. 🔐 Login to **Namecheap** → **Domain List** → **Manage your domain**
-2. 🔧 Go to **Advanced DNS**
-3. ➕ Add an **A Record**:
+1. Login to **Namecheap** → **Domain List** → **Manage your domain**
+2. Go to **Advanced DNS**
+3. Add an **A Record**:
 
 ```
 Type: A Record
@@ -62,10 +62,10 @@ Value: Your Server Public IP (e.g., 3.25.254.106)
 TTL: Automatic or 5 minutes
 ```
 
-### 3️⃣ GoDaddy Setup
+### GoDaddy Setup
 
-1. 🔐 Login to **GoDaddy** → **My Products** → **Manage DNS**
-2. ➕ Add a **Record**:
+1. Login to **GoDaddy** → **My Products** → **Manage DNS**
+2. Add a **Record**:
 
 ```
 Type: A
@@ -74,32 +74,32 @@ Value: Server Public IP (e.g., 3.25.254.106)
 TTL: 1 Hour or default
 ```
 
-> 📝 **Note:** DNS propagation may take 5 minutes to 1 hour.
+> Note: DNS propagation may take 5 minutes to 1 hour.
 
 ---
 
-## 🎉 After Setup
+## After Setup
 
-✅ Access n8n at `https://your-subdomain.yourdomain.com` (replace with your chosen subdomain and domain)
+Access n8n at `https://your-subdomain.yourdomain.com` (replace with your chosen subdomain and domain)
 
 ---
 
-## 🛠️ What Gets Installed
+## What Gets Installed
 
-| Component | Purpose |
-|-----------|---------|
-| 🐳 **Docker & Docker Compose** | Container orchestration |
-| 🌐 **NGINX** | Reverse proxy server |
-| 🔐 **Certbot** | SSL certificate management |
-| ⚙️ **n8n** | Workflow automation platform |
-
+| Component               | Purpose                      |
+| ----------------------- | ---------------------------- |
+| Docker & Docker Compose | Container orchestration      |
+| NGINX                   | Reverse proxy server         |
+| Certbot                 | SSL certificate management   |
+| n8n                     | Workflow automation platform |
 
 ---
 
 **Developed by HASAN**
+🌐 [codebyhasan.link](https://codebyhasan.link)
 
-🌐 https://codebyhasan.link
-📅 **Date:** 2025-08-22
+📅 Date: 2025-08-22
 
 ---
-⭐ **If this helped you, give it a star!**
+
+If this helped you, give it a star!
