@@ -11,20 +11,22 @@
 
 ## Features
 
-- One-click installation for n8n with Docker Compose
-- Automatic NGINX reverse proxy setup
-- SSL certificate issuance via Certbot
-- n8n updated to latest version automatically
-- Secure configuration out of the box
+- One-click installation for n8n with Docker Compose  
+- Automatic NGINX reverse proxy setup  
+- SSL certificate issuance via Certbot  
+- n8n updated to latest version automatically  
+- Secure configuration out of the box  
 
 ---
 
 ## Quick Run
 
-### One-Line Installation
+Run the following commands to install:
 
 ```bash
-sudo wget https://raw.githubusercontent.com/CodeByHasan/nodemation/main/nodemation.sh -O nodemation.sh && chmod +x nodemation.sh && ./nodemation.sh
+sudo wget https://raw.githubusercontent.com/CodeByHasan/nodemation/main/nodemation.sh -O nodemation.sh
+sudo chmod +x nodemation.sh
+sudo ./nodemation.sh
 ````
 
 > **Important:** Make sure your domain points to your server's public IP before running the script.
@@ -80,26 +82,36 @@ TTL: 1 Hour or default
 
 ## After Setup
 
-Access n8n at `https://your-subdomain.yourdomain.com` (replace with your chosen subdomain and domain)
+✅ Access n8n at:
+`https://subdomain.yourdomain.com`
 
 ---
 
 ## What Gets Installed
 
-| Component               | Purpose                      |
-| ----------------------- | ---------------------------- |
-| Docker & Docker Compose | Container orchestration      |
-| NGINX                   | Reverse proxy server         |
-| Certbot                 | SSL certificate management   |
-| n8n                     | Workflow automation platform |
+| Component               | Purpose                    |
+| ----------------------- | -------------------------- |
+| Docker & Docker Compose | Container orchestration    |
+| NGINX                   | Reverse proxy server       |
+| Certbot                 | SSL certificate management |
+| n8n                     | Workflow automation        |
 
 ---
 
-**Developed by HASAN**
-🌐 [codebyhasan.link](https://codebyhasan.link)
+## Uninstall (Full Removal)
+
+If you want to completely remove n8n, Docker, NGINX, Certbot, and all related data:
+
+```bash
+sudo wget https://raw.githubusercontent.com/CodeByHasan/nodemation/main/denodemation.sh -O denodemation.sh && chmod +x denodemation.sh && ./denodemation.sh
+```
+
+⚠️ **Warning:** This will remove everything related to n8n, including Docker, NGINX configs, SSL certificates, and volumes. Use only if you want a clean server reset.
+
+---
 
 📅 Date: 2025-08-22
 
 ---
 
-If this helped you, give it a star!
+⭐ If this helped you, give it a star!
